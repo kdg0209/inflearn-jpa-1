@@ -19,9 +19,9 @@ public class Member {
 
     private String name;
 
-    @OneToMany(mappedBy = "member")
-    private List<Order> orders = new ArrayList<>();
-
     @Embedded
     private Address address;
+
+    @OneToMany(mappedBy = "member")
+    private List<Order> orders = new ArrayList<>();
 }
