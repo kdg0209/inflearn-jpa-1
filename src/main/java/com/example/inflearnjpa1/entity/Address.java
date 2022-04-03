@@ -1,5 +1,6 @@
 package com.example.inflearnjpa1.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -10,6 +11,7 @@ import javax.persistence.Embeddable;
 @Setter
 @Embeddable
 @NoArgsConstructor
+@AllArgsConstructor
 public class Address {
 
     private String city;
