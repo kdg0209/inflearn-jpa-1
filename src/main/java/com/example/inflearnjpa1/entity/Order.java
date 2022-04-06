@@ -22,7 +22,7 @@ public class Order {
     @Column(name = "order_id")
     private Long id;
 
-    private LocalDateTime orderData;
+    private LocalDateTime orderDate;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "member_id")
@@ -63,7 +63,7 @@ public class Order {
                 order.setOrderItems(orderItem);
             }
             order.setStatus(OrderStatus.ORDER);
-            order.setOrderData(LocalDateTime.now());
+            order.setOrderDate(LocalDateTime.now());
             return order;
     }
 
